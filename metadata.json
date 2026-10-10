@@ -1,0 +1,6 @@
+{
+  "name": "ReSpace KSA | ري سبيس",
+  "description": "Smart platform for analyzing, renovating, reconfiguring, and improving existing buildings, floors, apartments, and real-estate units across Saudi Arabia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

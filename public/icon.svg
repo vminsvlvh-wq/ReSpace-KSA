@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="512" height="512" rx="96" fill="url(#bgGrad)" />
+  <rect width="512" height="512" rx="96" fill="url(#grid)" />
+  <rect width="504" height="504" x="4" y="4" rx="92" fill="none" stroke="#f59e0b" stroke-width="2" stroke-opacity="0.3" />
+
+  <!-- Blueprint Architectural Geometry -->
+  <g transform="translate(64, 64)">
+    <!-- Outer Floor Wall -->
+    <rect x="24" y="24" width="336" height="336" rx="16" fill="none" stroke="#38bdf8" stroke-width="6" stroke-dasharray="8 6" opacity="0.4" />
+    
+    <!-- Subdivision Partitions -->
+    <line x1="192" y1="24" x2="192" y2="360" stroke="#f59e0b" stroke-width="8" stroke-linecap="round" />
+    <line x1="24" y1="200" x2="192" y2="200" stroke="#f59e0b" stroke-width="8" stroke-linecap="round" />
+
+    <!-- Structural Columns in Red -->
+    <rect x="18" y="18" width="20" height="20" rx="3" fill="#f43f5e" />
+    <rect x="182" y="18" width="20" height="20" rx="3" fill="#f43f5e" />
+    <rect x="346" y="18" width="20" height="20" rx="3" fill="#f43f5e" />
+    <rect x="18" y="346" width="20" height="20" rx="3" fill="#f43f5e" />
+    <rect x="182" y="346" width="20" height="20" rx="3" fill="#f43f5e" />
+    <rect x="346" y="346" width="20" height="20" rx="3" fill="#f43f5e" />
+
+    <!-- ReSpace Letter 'R' Monogram -->
+    <path d="M 100 80 L 170 80 C 205 80 230 100 230 135 C 230 170 205 190 170 190 L 100 190 Z" fill="url(#amberGrad)" />
+    <path d="M 135 115 L 165 115 C 180 115 192 122 192 135 C 192 148 180 155 165 155 L 135 155 Z" fill="#020617" />
+    <rect x="100" y="80" width="35" height="220" rx="6" fill="url(#amberGrad)" />
+    <path d="M 155 185 L 225 300 L 180 300 L 125 195 Z" fill="url(#amberGrad)" />
+
+    <!-- Modern Compass Star Badge -->
+    <circle cx="280" cy="270" r="48" fill="#0f172a" stroke="#f59e0b" stroke-width="4" />
+    <polygon points="280,235 292,265 320,270 292,275 280,305 268,275 240,270 268,265" fill="#f59e0b" />
+  </g>
+</svg>
